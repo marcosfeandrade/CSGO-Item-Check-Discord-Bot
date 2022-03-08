@@ -8,8 +8,8 @@
 <img src="https://img.shields.io/static/v1?label=npm&message=v13.6.0&color=4752C4&style=for-the-badge&logo=Discord"/>
 
 <h2>👨‍💻 How use</h2>
-1. Add the bot in your Discord server ↓
-https://discord.com/oauth2/authorize?client_id=944282480100397137&scope=bot&permissions=8
-2. Send the command based in this structure ↓
-$info item name(english) // time(days) // currency
-E.g.: $info AWP | Sun in Leo (Factory New) // 30 // BRL
+<p>1. Add the bot in your Discord server ↓</p>
+<p>https://discord.com/oauth2/authorize?client_id=944282480100397137&scope=bot&permissions=8</p>
+<p>2. Send the command based in this structure ↓</p>
+<p>$info item name(english) // time(days) // currency</p>
+<p>E.g.: $info AWP | Sun in Leo (Factory New) // 30 // BRL</p>

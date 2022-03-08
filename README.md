@@ -15,7 +15,7 @@
 <p>I/O E.g.:<br>
 Message:<br>
 $info AWP | Sun in Leo (Factory New) // 30 // BRL<br>
-==================================================
+==================================================<br>
 Response:<br>
 AWP | Sun in Leo (Factory New)<br>
 Informations of Steam at last 30 day(s)<br>

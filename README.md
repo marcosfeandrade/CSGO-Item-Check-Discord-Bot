@@ -12,7 +12,7 @@
 <p>https://discord.com/oauth2/authorize?client_id=944282480100397137&scope=bot&permissions=8</p>
 <p>2. Send the command based in this structure ↓</p>
 <p>$info item name(english) // time(days) // currency</p>
-<p>I/O E.g.↓</p>
+<p>I/O E.g.:</p>
 <p>Message:<br>
 $info AWP | Sun in Leo (Factory New) // 30 // BRL</p>
 <p>Response:<br>

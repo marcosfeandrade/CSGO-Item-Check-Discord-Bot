@@ -1,4 +1,4 @@
-<h1 align="center">Item Info Check Discord Boto</h1>
+<h1 align="center">Item Info Check Discord Bot</h1>
 <p>A Discord bot to check the Steam information of CS:GO items using "CS:GO Backpack API".</p>
 
 <h2>📚 Technologies</h2>
@@ -13,3 +13,6 @@
 <p>2. Send the command based in this structure ↓</p>
 <p>$info item name(english) // time(days) // currency</p>
 <p>E.g.: $info AWP | Sun in Leo (Factory New) // 30 // BRL</p>
+
+<h2>⚠️ Warning</h2>
+<p>The bot token is censored in the code.</p>

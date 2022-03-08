@@ -12,13 +12,16 @@
 <p>https://discord.com/oauth2/authorize?client_id=944282480100397137&scope=bot&permissions=8</p>
 <p>2. Send the command based in this structure ↓</p>
 <p>$info item name(english) // time(days) // currency</p>
-<p>I/O E.g.:</p>
-<p>$info AWP | Sun in Leo (Factory New) // 30 // BRL</p>
-<p>AWP | Sun in Leo (Factory New)<br>
+<p>I/O E.g.↓</p>
+<p>Message:<br>
+$info AWP | Sun in Leo (Factory New) // 30 // BRL</p>
+<p>Response:<br>
+AWP | Sun in Leo (Factory New)<br>
 Informations of Steam at last 30 day(s)<br>
 Average price = BRL 88.29;<br>
 Amount sold = 1856;<br>
 Lowest price = BRL 57.75;<br>
 Highest price= BRL 407.75.</p>
+
 <h2>⚠️ Warning</h2>
 <p>The bot token is censored in the code.</p>

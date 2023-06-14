@@ -18,7 +18,7 @@ async function getItemColor(name) {
       `https://csgobackpack.net/api/GetItemsList/v2/`
     );
     const itemName = response
-    return itemName.data.items_list["AK-47 | Aquamarine Revenge (Battle-Scarred)"].rarity_color;
+    return itemName.data.items_list[name].rarity_color;
   } catch (err) {
     console.log(err);
   }

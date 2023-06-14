@@ -22,9 +22,9 @@ client.on("messageCreate", async (message) => {
       if (resp.data.success == "false" || !name || !time || !currency) {
         const errorMessage = new MessageEmbed()
           .setColor("#ff0000")
-          .setTitle("Erro")
+          .setTitle("Error")
           .setDescription(
-            "Estrutura correta: $info item(english) // time(days) // currency\n\nExemplo:\nInput: $info AK-47 | Aquamarine Revenge (Battle-Scarred) // 7 // USD\n\nSaída:\nAK-47 | Aquamarine Revenge (Battle-Scarred)\nInformações dos últimos 7 dias\nPreço médio = USD 15.58;\nQuantidade vendida = 373;\nMenor preço = USD 13.99;\nMaior preço = USD 17.82;"
+            "Correct structure: $info item(english) // time(days) // currency\n\nExemplo:\nInput: $info AK-47 | Aquamarine Revenge (Battle-Scarred) // 7 // USD\n\nOutput:\nAK-47 | Aquamarine Revenge (Battle-Scarred)\nInformações dos últimos 7 dias\nPreço médio = USD 15.58;\nQuantidade vendida = 373;\nMenor preço = USD 13.99;\nMaior preço = USD 17.82;"
           );
 
         return message.reply({ embeds: [errorMessage] });
@@ -33,11 +33,11 @@ client.on("messageCreate", async (message) => {
       const embedMessage = new MessageEmbed()
         .setColor("#" + request.getItemColor(name))
         .setTitle(name)
-        .setDescription(`Informações do Steam nos últimos ${time} dia(s)`)
-        .addFields("Preço médio", `${currency} ${resp.data.average_price}`,
-        "Quantidade vendida", resp.data.amount_sold,
-        "Menor preço", `${currency} ${resp.data.lowest_price}`,
-        "Maior preço", `${currency} ${resp.data.highest_price}`);
+        .setDescription(time == 1 ? `Steam information in the last ${time} day` : `Steam information in the last ${time} days`)
+        .addFields("Average price", `${currency} ${resp.data.average_price}`,
+        "Sold amount", resp.data.amount_sold,
+        "Lowest price", `${currency} ${resp.data.lowest_price}`,
+        "Biggest price", `${currency} ${resp.data.highest_price}`);
 
       message.reply({ embeds: [embedMessage] });
     })

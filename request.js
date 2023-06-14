@@ -5,12 +5,14 @@ var response;
 
 async function getData(name, time, currency) {
   try {
-    return await axios.get(`https://csgobackpack.net/api/GetItemPrice/?currency=${currency}&id=${name}&time=${time}`);
+    return await axios.get(
+      `https://csgobackpack.net/api/GetItemPrice/?currency=${currency}&id=${name}&time=${time}`
+    );
   } catch (err) {
     console.log(err);
   }
 }
 
 module.exports = {
-  getData
-}
+  getData,
+};

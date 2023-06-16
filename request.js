@@ -1,6 +1,4 @@
 var axios = require("axios");
-//http://csgobackpack.net/api/GetItemsList/v2/
-//https://csgobackpack.net/api/GetItemPrice/?currency=USD&id=${name}&time=${time}
 
 async function getItemData(name, time, currency) {
   try {

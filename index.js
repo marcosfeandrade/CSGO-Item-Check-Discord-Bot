@@ -33,12 +33,16 @@ client.on("messageCreate", async (message) => {
       const embedMessage = new MessageEmbed()
         .setColor("#" + request.getItemColor(name))
         .setTitle(name)
-        .setDescription(time == 1 ? `Steam information in the last ${time} day` : `Steam information in the last ${time} days`)
+        .setDescription(time == 1 ? `Steam information for the last ${time} day` : `Steam information for the last ${time} days`)
         .addFields("Average price", `${currency} ${resp.data.average_price}`,
         "Sold amount", resp.data.amount_sold,
         "Lowest price", `${currency} ${resp.data.lowest_price}`,
         "Biggest price", `${currency} ${resp.data.highest_price}`);
-
+        console.log("Correct message");
+        console.log("embedMessage - ", embedMessage);
+        console.log("name - ", name);
+        console.log("time - ", time);
+        console.log("itemColor - ", request.getItemColor(name));
       message.reply({ embeds: [embedMessage] });
     })
     .catch((err) => {
